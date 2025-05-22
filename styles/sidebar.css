@@ -1,0 +1,154 @@
+@media (max-width: 1263px){
+    .sidebar {
+        width: 72px;
+        border-right: 1px solid #dbdbdb;
+        height: 100vh;
+        padding: 8px 12px 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .sidebar .logo img:nth-child(1) {
+        width: 100px;
+    }
+
+    .sidebar .logo img:nth-child(2) {
+        display: none;
+    }
+
+    .sidebar nav ul {
+        list-style: none;
+    }
+
+    .sidebar nav ul li {
+        padding: 12px 10px;
+        margin: 4px 0;
+        font-size: 16px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+    }
+
+    .sidebar-footer ul {
+        list-style: none;
+        padding-top: 20px;
+    }
+
+    .sidebar-footer ul li {
+        padding: 12px 10px;
+        font-size: 14px;
+        cursor: pointer;
+        color: #737373;
+        display: flex;
+        align-items: center;
+    }
+
+    .nav-names{
+        display: none;
+    }
+
+    .sidebar-footer ul li img,
+    .sidebar nav ul li,
+    .explore-icon img{
+        width: 80px;
+    }
+}
+
+@media (min-width: 1264px) {
+    .sidebar {
+        width: 245px;
+        border-right: 1px solid #dbdbdb;
+        height: 100vh;
+        padding: 8px 12px 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .logo{
+        padding: 25px 12px 16px;
+        margin-bottom: 19px;
+        display: flex;
+        align-items: center;
+        left: -2px;
+    }
+
+    .sidebar .logo img:nth-child(1) {
+        display: none;
+    }
+
+    .sidebar .logo img:nth-child(2) {
+        width: 110px;
+    }
+            
+    .sidebar-icon {
+        width: 24px;
+    }
+
+    .sidebar nav ul {
+        list-style: none;
+    }
+
+    .sidebar nav ul li {
+        width: 220px;
+        height: 48px;
+        padding: 12px;
+        margin: 4px 0;
+        font-size: 15px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        gap: 1px;
+        line-height: 18px;
+    }
+
+    .sidebar-profile-picture{
+        border-radius: 50%;
+    }
+
+    .sidebar nav ul li:hover,
+    .sidebar-footer ul li:hover {
+        background-color: #f0f0f0;
+        border-radius: 10px;
+    }
+
+    .sidebar ul li img,
+    .sidebar-footer ul li img {
+        width: 23px;
+    }
+
+    .sidebar-footer ul {
+        list-style: none;
+        padding-top: 20px;
+    }
+
+    .sidebar-footer ul li {
+        width: 220px;
+        height: 48px;
+        padding: 12px;
+        font-size: 14px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        gap: 1px;
+        line-height: 18px;
+        margin: 4px 0;
+    }
+
+    .nav-names{
+        padding-left: 16px;
+    }
+}
+
+@media (min-width: 1920px){
+    .sidebar {
+        width: 335px;
+        border-right: 1px solid #dbdbdb;
+        height: 100vh;
+        padding: 8px 12px 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+}

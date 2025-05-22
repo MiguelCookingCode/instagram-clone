@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram Clone</title>
+
+    <link rel="stylesheet" href="styles/general.css">
+    <link rel="stylesheet" href="styles/sidebar.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <script src="header.js"></script>
+</head>
+<body>
+    <aside class="sidebar">
+        <div>
+            <div class="logo">
+                <img src="img/icon/black-instagram-icon.svg" alt="" class="instagram-icon">
+                <img src="img/img/instagram-logo.png" alt="" class="instagram-logo">
+            </div>
+            
+            <nav>
+                <ul>
+                    <li>
+                        <img src="img/icon/instagram-home-feed-icon.svg" alt="">
+                        <div class="nav-names">Home</div>
+                    </li>
+                    <li>
+                        <img src="img/icon/instagram-search-icon.svg" alt="">
+                        <div class="nav-names">Search</div>
+                    </li>
+                    <li>
+                        <img src="img/icon/explore.svg" alt="" class="sidebar-icon">
+                        <div class="nav-names">Explore</div>
+                    </li>
+                    <li>
+                        <img src="img/icon/instagram-reels-icon.svg" alt="">
+                        <div class="nav-names">Reels</div>
+                    </li>
+                    <li>
+                        <img src="img/icon/instagram-share-icon.svg" alt="">
+                        <div class="nav-names">Messages</div>
+                    </li>
+                    <li>
+                        <img src="img/icon/instagram-heart-icon.svg" alt="">
+                        <div class="nav-names">Notifications</div>
+                    </li>
+                    <li>
+                        <img src="img/icon/instagram-add-new-post-icon.svg" alt="">
+                        <div class="nav-names">Create</div>
+                    </li>
+                    <li>
+                        <img src="img/img/profile-picture.jpg" alt="" class="sidebar-profile-picture">
+                        <div class="nav-names">Profile</div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+            <!--Sidebar Bottom-->
+
+        <div class="sidebar-footer">
+            <ul>
+                <li>
+                    <img src="img/icon/ai-icon.png" alt="">
+                    <div class="nav-names">Meta AI</div>
+                </li>
+                <li>
+                    <img src="img/icon/threads-icon.svg" alt="">
+                    <div class="nav-names">Threads</div>
+                </li>
+                <li>
+                    <img src="img/icon/hamburger-icon.svg" alt="">
+                    <span class="nav-names">More</span>
+                </li>
+            </ul>
+        </div>  
+    </aside>
+
+    <main class="profile-content">
+        <header class="header">
+            <section>
+                <div class="profile-picture-container">
+                    <div class="story-ring-container">
+                        <a href="https://www.instagram.com/stories/motogp/">
+                            <div class="story-ring">
+                                <div class="story-inner">
+                                    <img src="img/img/1088024.jpg" alt="" class="profile-picture">
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <div class="profile-info">
+                <section>
+                    <div class="profile-name">
+                        <a href="https://www.instagram.com/motogp">
+                            <span>motogp</span>
+                        </a>
+                        <img src="img/icon/verified.png" alt="">
+                    </div>
+                    <div class="profile-btn">
+                        <button class="follow-btn">Follow</button>
+                        <button class="message-btn">Message</button>
+                        <button class="add-user-btn">
+                            <img src="img/icon/add-user.svg" alt="">
+                        </button>
+                    </div>
+                    <div class="option-btn">
+                        <img src="img/icon/three-dots.svg" alt="">
+                    </div>
+                </section>
+
+                <section>
+                    <ul>
+                        <li class="posts">
+                            <span>23,911</span>
+                            <span>posts</span>
+                        </li>
+                        <li class="followers">
+                            <span>17M</span>
+                            <span>followers</span>
+                        </li>
+                        <li class="following">
+                            <span>214</span>
+                            <span>following</span>
+                        </li>
+                    </ul>
+                </section>
+
+                <section>
+                    <div class="name">MotoGP™</div>
+                    <a href="https://www.threads.com/@motogp?xmt=AQF0MtP77ihdvEMNdKnBGxswaoSR9HnWqpUO7RpgQNbxomk" class="link-threads">
+                        <img src="img/icon/threads-icon.svg" alt="">motogp
+                    </a>
+                    <span>Faster. Forward. Fearless.</span>
+                    <div class="linktr">
+                        <img src="img/icon/clip-icon.svg" alt="">
+                        <a href="https://linktr.ee/MotoGP">linktr.ee/MotoGP</a>
+                    </div>
+                </section>
+            </div>
+
+            <section class="horizontal-list">
+                <button class="left-btn"><img src="img/icon/left-arrow.png" alt=""></button>
+                <button class="right-btn"><img src="img/icon/right-arrow.png" alt=""></button>
+                <div class="story-wrapper">    
+                    <ul class="list" id="storyList">
+                        <li class="branch-side"></li>
+                        <li class="story-size">
+                            <canvas class="story-style"></canvas>
+                            <div class="story-padding">
+                                <img src="img/img/story/467283725_1233855101047060_4397965308731667193_n.jpg" alt="">
+                                <div class="story-name">WALLPAPERS</div>
+                            </div>
+                        </li>
+                        <li class="story-size">
+                            <canvas class="story-style"></canvas>
+                            <div class="story-padding">
+                                <img src="img/img/story/497465468_3485934468203270_986504372171766734_n.jpg" alt="">
+                                <div class="story-name">FRANCE</div>
+                            </div>
+                        </li>
+                        <li class="story-size">
+                            <canvas class="story-style"></canvas>
+                            <div class="story-padding">
+                                <img src="img/img/story/467344437_994582662701611_2378984773512656080_n.jpg" alt="">
+                                <div class="story-name">FANTASY</div>
+                            </div>
+                        </li>
+                        <li class="story-size">
+                            <canvas class="story-style"></canvas>
+                            <div class="story-padding">
+                                <img src="img/img/story/492103711_1809365086523674_729358289531937609_n.jpg" alt="">
+                                <div class="story-name">SPAIN</div>
+                            </div>
+                        </li>
+                        <li class="story-size">
+                            <canvas class="story-style"></canvas>
+                            <div class="story-padding">
+                                <img src="img/img/story/491445314_8972438286189854_4439664864618526592_n.jpg" alt="">
+                                <div class="story-name">JEREZ</div>
+                            </div>
+                        </li>
+                        <li class="story-size">
+                            <canvas class="story-style"></canvas>
+                            <div class="story-padding">
+                                <img src="img/img/story/490436172_703267365598953_178561089426644726_n.jpg" alt="">
+                                <div class="story-name">QATAR</div>
+                            </div>
+                        </li>
+                        <li class="story-size">
+                            <canvas class="story-style"></canvas>
+                            <div class="story-padding">
+                                <img src="img/img/story/489357454_445815768588068_8652903731031719464_n.jpg" alt="">
+                                <div class="story-name">USA</div>
+                            </div>
+                        </li>
+                        <li class="story-size">
+                            <canvas class="story-style"></canvas>
+                            <div class="story-padding">
+                                <img src="img/img/story/489348148_1031253325578086_5973937953201987272_n.jpg" alt="">
+                                <div class="story-name">ARGENTINA</div>
+                            </div>
+                        </li>
+                        <li class="story-size">
+                            <canvas class="story-style"></canvas>
+                            <div class="story-padding">
+                                <img src="img/img/story/467410247_1871115103418665_6816326490481531043_n.jpg" alt="">
+                                <div class="story-name">CALENDAR</div>
+                            </div>
+                        </li>
+                        <li class="story-size">
+                            <canvas class="story-style"></canvas>
+                            <div class="story-padding">
+                                <img src="img/img/story/482576101_504395062438934_955934777185900280_n.jpg" alt="">
+                                <div class="story-name">THAILAND</div>
+                            </div>
+                        </li>
+                        <li class="story-size">
+                            <canvas class="story-style"></canvas>
+                            <div class="story-padding">
+                                <img src="img/img/story/477190230_1137074861043791_3077292897471833703_n.jpg" alt="">
+                                <div class="story-name">BURIRAM</div>
+                            </div>
+                        </li>
+                        <li class="story-size">
+                            <canvas class="story-style"></canvas>
+                            <div class="story-padding">
+                                <img src="img/img/story/470210213_555478767399285_5979764316517108587_n.heic" alt="">
+                                <div class="story-name">BANGKOK</div>
+                            </div>
+                        </li>
+                        <li class="story-size">
+                            <canvas class="story-style"></canvas>
+                            <div class="story-padding">
+                                <img src="img/img/story/476079332_470095642832311_9152548521811529056_n.jpg" alt="">
+                                <div class="story-name">SEPANG</div>
+                            </div>
+                        </li>
+                        <li class="story-size">
+                            <canvas class="story-style"></canvas>
+                            <div class="story-padding">
+                                <img src="img/img/story/467536837_1103487654461096_3530764784182671977_n.jpg" alt="">
+                                <div class="story-name">BARCELONA</div>
+                            </div>
+                        </li>
+                        <li class="story-size">
+                            <canvas class="story-style"></canvas>
+                            <div class="story-padding">
+                                <img src="img/img/story/467337391_547383764814985_9163401285558285556_n.jpg" alt="">
+                                <div class="story-name">Podcast 🎧</div>
+                            </div>
+                        </li>
+                        <li class="branch-side"></li>
+                    </ul>
+                </div>    
+            </section>
+        </header>
+    </main>
+</body>
+</html>
