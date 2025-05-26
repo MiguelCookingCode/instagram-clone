@@ -9,49 +9,89 @@
         justify-content: space-between;
     }
 
+    .logo-margin{
+        width: 48px;
+        height: 73px;
+        margin-top: 12px;
+        padding-bottom: 23px;
+    }
+
     .sidebar .logo img:nth-child(1) {
-        width: 100px;
+        width: 24px;
     }
 
     .sidebar .logo img:nth-child(2) {
         display: none;
     }
 
+    .logo{
+        display: flex;
+        object-position: center;
+        padding: 12px;
+        margin: 4px 0;
+    }
+
     .sidebar nav ul {
         list-style: none;
     }
+            
+    .sidebar-icon {
+        width: 24px;
+    }
 
     .sidebar nav ul li {
-        padding: 12px 10px;
-        margin: 4px 0;
-        font-size: 16px;
+        width: 48px;
+        height: 48px;
+        padding: 12px;
+        margin: 7px 0;
+        font-size: 15px;
         cursor: pointer;
         display: flex;
         align-items: center;
+        gap: 1px;
+        line-height: 18px;
+    }
+
+    .sidebar-profile-picture{
+        border-radius: 50%;
+    }
+
+    .sidebar nav ul li:hover,
+    .sidebar-footer ul li:hover {
+        background-color: #f0f0f0;
+        border-radius: 10px;
+    }
+
+    .sidebar ul li img,
+    .hamburger,
+    .sidebar-footer .from-meta {
+        width: 23px;
     }
 
     .sidebar-footer ul {
         list-style: none;
-        padding-top: 20px;
     }
 
-    .sidebar-footer ul li {
-        padding: 12px 10px;
+    .sidebar-footer .hamburger,
+    .sidebar-footer .from-meta {
+        width: 48px;
+        height: 48px;
+        padding: 12px;
         font-size: 14px;
         cursor: pointer;
-        color: #737373;
         display: flex;
         align-items: center;
+        gap: 1px;
+        line-height: 18px;
+        margin: 4px 0;
+    }
+
+    .threads {
+        display: none;
     }
 
     .nav-names{
         display: none;
-    }
-
-    .sidebar-footer ul li img,
-    .sidebar nav ul li,
-    .explore-icon img{
-        width: 80px;
     }
 }
 
@@ -123,7 +163,8 @@
         padding-top: 20px;
     }
 
-    .sidebar-footer ul li {
+    .sidebar-footer ul .hamburger,
+    .sidebar-footer .from-meta {
         width: 220px;
         height: 48px;
         padding: 12px;
@@ -150,5 +191,11 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+    }
+}
+
+@media (max-height: 612px){
+    .sidebar-footer .from-meta {
+        display: none;
     }
 }
