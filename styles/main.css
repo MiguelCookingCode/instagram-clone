@@ -1,47 +1,8 @@
-@media (max-width: 1263px) {
-    .profile-content {
-        flex: 1;
-        padding: 40px;
-        max-width: 935px;
-        margin: 0 auto;
-    }
-
-    .header{
-        border-bottom: 1px solid rgb(223, 223, 223);
-        width: auto;
-        height: 418px;
-        width: 935px;
-    }
-
-    .profile-info-grid{
-        display: grid;
-        grid-template-columns: 200px 1fr;
-        column-gap: 20px;
-        height: 194px;
-    }
-
-    .profile-picture-container{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .profile-picture{
-        width: 150px;
-        height: 150px;
-        border-radius: 150px;
-    }
-}
-
-@media (min-width: 1264px) {
-    a, a:hover, a:focus, a:active {
-        text-decoration: none;
-        color: inherit;
-    }
-
-    li {
-        list-style: none;
-    }
+@media (max-width: 1263px), (min-width: 1264px) {
+    .main-grid {
+        margin-left: 245px;
+        width: 100%;
+    }                                                                                                        
 
     .profile-content {
         flex: 1;
@@ -50,362 +11,89 @@
         margin: 0 auto;
     }
 
-   .header{
-        border-bottom: 1px solid rgb(223, 223, 223);
-        width: auto;
-        height: 418px;
-        width: 935px;
-        display: grid;
-        grid-template-columns: 283.667px 1fr;
-        /*grid-template-rows: 935px 935px;*/
-        column-gap: 28px;
-    }
-
-    section:nth-child(1){
-        display: flex;
-        align-items: center;
-        width: 283.667px;
-        height: 200px;
-    }
-    
-    .profile-picture-container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 283.667px;
-        height: 150px;
-    }
-
-    .story-ring-container {
-        width: 168px;
-        height: 168px;
-        cursor: pointer;
-    }
-
-    .story-ring {
-        background: linear-gradient(45deg, #feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5);
-        padding: 5px; /* thickness of the ring */
-        border-radius: 50%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 100%;
-        height: 100%;
-    }
-
-    .story-inner {
-        background-color: white;
-        padding: 3px; /* space between ring and image */
-        border-radius: 50%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 160px;
-        height: 160px;
-    }
-
-    .story-inner img {
-        width: 150px;
-        height: 150px;
-        border-radius: 50%;
-        object-fit: cover;
-    }
-
-    .profile-info {
-        height: 200px;
-    }
-
-    .profile-info section:nth-child(1) {
-        display: flex;
-        align-items: center;
-        margin-bottom: 20px;
-        width: 623.333px;
-        height: 48px;
-    }
-
-    .profile-name {
+    .events {
         display: flex;
         flex-direction: row;
-        width: 96.9833px;
-        height: 25px;
-        margin-right: 20px;
-    }
-
-    .profile-name span  {
-        display: flex;
-        align-items: flex-end;
-        font-size: 21px;
-        cursor: pointer;
-    }
-
-    .profile-name img {
-        display: flex;
-        align-items: flex-end;
-        width: 21px;
-        height: 21px;
-        margin: 4px 0 0 8px;
-    }
-
-    .profile-btn{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        row-gap: 2px;
-        width: 219.25px;
-        height: 32px;
-    }
-
-    .follow-btn{
-        color: white;
+        gap: 70px;
+        align-items: center;
+        justify-content: center;
+        height: 53px;
         font-size: 12px;
-        letter-spacing: 0.5px;
+    }
+
+    .posted {
         font-weight: bold;
-        padding: 7px 16px;
-        width: 81.65px;
+        border-top: 1px solid;
+    }
+
+    .posted,
+    .saved,
+    .tagged {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         height: 100%;
-        border: none;
-        border-radius: 8px;
-        background-color: rgb(44, 155, 247);
-        cursor: pointer;
     }
 
-    .follow-btn:hover {
-        background-color: rgb(30, 139, 228);
+    .posted span,
+    .saved span,
+    .tagged span {
+        margin-left: 6px;
     }
 
-    .message-btn{
-        border: none;
-        border-radius: 8px;
-        font-weight: bold;
-        font-size: 12px;
-        letter-spacing: 0.5px;
-        width: 87.6px;
-        height: 100%;
-        cursor: pointer;
+    .posted img,
+    .tagged img {
+        width: 15px;
+        margin: 0;
     }
 
-    .add-user-btn{
-        width: 32px;
-        height: 34px;
-        padding: 8px;
-        border: none;
-        border-radius: 8px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        cursor: pointer;
-    }
-
-    .add-user-btn img {
-        width: 18px;
-        height: 16px;
-    }
-
-    .option-btn {
-        display: flex;
-        align-items: center;
-        width: 32px;
-        height: 32px;
-        margin-left: 8px;
-        cursor: pointer;
-    }
-
-    .option-btn img {
-        width: 100%;
-        height: 20px;
-    }
-
-    .profile-info section:nth-child(2) {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        margin-bottom: 20px;
-        width: 100%;
-        height: 20px;
-    }
-
-    .profile-info section:nth-child(2) ul{
-        display: flex;
-        flex-direction: row;
-        row-gap: 20px;
-    }
-
-    .profile-info section:nth-child(2) ul li{
-        list-style: none;
-        margin-right: 37px;
-    }
-
-    .posts span:nth-child(1),
-    .followers span:nth-child(1),
-    .following span:nth-child(1),
-    .profile-info section:nth-child(3) .name{
-        font-weight: bold;
-        font-size: 15px;
-    }
-
-    .posts span:nth-child(2),
-    .followers span:nth-child(2),
-    .following span:nth-child(2) {
-        color: gray;
-        font-size: 15px;
-    }
-
-    .profile-info section:nth-child(3) {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .profile-info section:nth-child(3) .link-threads {
-        border-radius: 15px;
-        background: rgb(236, 236, 236);
-        width: 75.5833px;
-        height: 26px;
-        font-size: 13px;
-        margin: 6px 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-decoration: none;
-        color: black;
-    }
-
-    .profile-info section:nth-child(3) .link-threads:hover {
-        background-color: rgb(223, 223, 223);
-    }
-
-    .profile-info section:nth-child(3) a img {
-        width: 16px;
-        height: 16px;
-        margin-right: 3px;
-    }
-
-    .profile-info section:nth-child(3) span{
-        font-size: 13px;
-        height: 19px;
-    }
-    
-    .linktr {
-        display: flex;
-        flex-direction: row;
-    }
-
-    .linktr img{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-right: 7px;
+    .saved img{
         width: 12px;
-        height: 12px;
+        margin: 0;
     }
 
-    .linktr a {
-        color: rgb(43, 60, 134);
-        font-size: 13px;
-        font-weight: bold;
-        text-decoration: none;
+    .grid-posts {
+        display: flex; 
+        flex-direction: column; 
+        padding-bottom: 0px; 
+        padding-top: 0px; 
+        position: relative;             
     }
 
-    .linktr a:hover {
-        text-decoration: underline;
-    }
-
-    .horizontal-list {
-        position: relative;
-        width: 935px;
-        height: 130px;
-        margin: 50px auto;
-        overflow: hidden; /* Overflow buttons */
-        display: flex;
-        align-items: center;
-        z-index: 10;
-    }
-
-    .left-btn, .right-btn {
-        position: absolute;
-        background-color: transparent;
-        border: 1px none #ccc;
-        padding: 5px 10px;
-        cursor: pointer;
-        opacity: 0.50;
-        z-index: 2;
-    }
-
-    .right-btn {
-        right: 5px;
-    }
-
-    .left-btn img, .right-btn img{
-        width: 24px;
-        height: 24px;
-        cursor: pointer;
-    }
-
-    .list {
+    .post-row {
         display: flex;
         flex-direction: row;
-        width: 935px;
-        height: 130px;
-        overflow-x: auto;
-        scroll-behavior: smooth;
-        gap: 5px;
-        scrollbar-width: none; /* Firefox */
-        z-index: 8;
+        margin-bottom: 4px;
+        height: 410.217px;
     }
 
-    .list::-webkit-scrollbar {
-        display: none; /* Chrome, Safari */
-    }
-    
-    .branch-side {
-        background-color: white;
-        width: 24px;
-        height: 128px;
-        flex: 0 0 auto;
-        z-index: 5;
+    .post-row div {
+        margin-right: 4px;
     }
 
-    .story-size {
-        flex: 0 0 auto; /* Prevent shrinking */
-        width: 125px;
-        height: 128px;
-        position: relative;
+    .post-row div img {
+        object-fit: cover;
+        width: 307.667px;
+        height: 100%;
     }
 
-    .story-style {
-        position: absolute; 
-        height: 89px; 
-        width: 89px;
-        border: 1px solid lightgray;
-        border-radius: 50%;
-        left: 13px;
-        top: 4px;
+    .third-post img{
+        object-position: 0 -55px;
     }
+}
 
-    .story-padding {
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        width: 115px;
-        height: 128px;
-        padding: 10px 15px;
+@media (min-width: 1920px) {
+    .main-grid {
+        width: 335px;
+        width: 100%;
     }
+}
 
-    .story-padding img {
-        display: flex;
-        border-radius: 50%;
-        justify-content: center;
-        align-items: center;
-        width: 77px;
-    }
-
-    .story-name {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 85px;
-        height: 16px;
-        font-size: 11px;
-        font-weight: 600;
-        margin-top: 15px;
+@media (max-height: 612px){
+    .profile-content {
+        flex: 1;
+        padding: 30px 20px 0;
+        max-width: 960.75px;
+        margin: 0 auto;
     }
 }

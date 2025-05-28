@@ -1,5 +1,11 @@
 @media (max-width: 1263px){
     .sidebar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        z-index: 1000;
+
         width: 72px;
         border-right: 1px solid #dbdbdb;
         height: 100vh;
@@ -43,7 +49,7 @@
         width: 48px;
         height: 48px;
         padding: 12px;
-        margin: 7px 0;
+        margin: 6px 0;
         font-size: 15px;
         cursor: pointer;
         display: flex;
@@ -97,6 +103,12 @@
 
 @media (min-width: 1264px) {
     .sidebar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        z-index: 1000;
+
         width: 245px;
         border-right: 1px solid #dbdbdb;
         height: 100vh;

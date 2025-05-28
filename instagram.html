@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="styles/general.css">
     <link rel="stylesheet" href="styles/sidebar.css">
     <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/footer.css">
     <script src="header.js"></script>
 </head>
 <body>
@@ -82,188 +84,264 @@
         </div>  
     </aside>
 
-    <main class="profile-content">
-        <header class="header">
-            <section>
-                <div class="profile-picture-container">
-                    <div class="story-ring-container">
-                        <a href="https://www.instagram.com/stories/motogp/">
-                            <div class="story-ring">
-                                <div class="story-inner">
-                                    <img src="img/logo/1088024.jpg" alt="" class="profile-picture">
+    <section class="main-grid">
+        <main class="profile-content">
+            <header class="header">
+                <section>
+                    <div class="profile-picture-container">
+                        <div class="story-ring-container">
+                            <a href="https://www.instagram.com/stories/motogp/">
+                                <div class="story-ring">
+                                    <div class="story-inner">
+                                        <img src="img/logo/1088024.jpg" alt="" class="profile-picture">
+                                    </div>
                                 </div>
-                            </div>
+                            </a>
+                        </div>
+                    </div>
+                </section>
+
+                <div class="profile-info">
+                    <section>
+                        <div class="profile-name">
+                            <a href="https://www.instagram.com/motogp">
+                                <span>motogp</span>
+                            </a>
+                            <img src="img/icon/verified.png" alt="">
+                        </div>
+                        <div class="profile-btn">
+                            <button class="follow-btn">Follow</button>
+                            <button class="message-btn">Message</button>
+                            <button class="add-user-btn">
+                                <img src="img/icon/add-user.svg" alt="">
+                            </button>
+                        </div>
+                        <div class="option-btn">
+                            <img src="img/icon/three-dots.svg" alt="">
+                        </div>
+                    </section>
+
+                    <section>
+                        <ul>
+                            <li class="posts">
+                                <span>23,911</span>
+                                <span>posts</span>
+                            </li>
+                            <li class="followers">
+                                <span>17M</span>
+                                <span>followers</span>
+                            </li>
+                            <li class="following">
+                                <span>214</span>
+                                <span>following</span>
+                            </li>
+                        </ul>
+                    </section>
+
+                    <section>
+                        <div class="name">MotoGP™</div>
+                        <a href="https://www.threads.com/@motogp?xmt=AQF0MtP77ihdvEMNdKnBGxswaoSR9HnWqpUO7RpgQNbxomk" class="link-threads">
+                            <img src="img/icon/threads-icon.svg" alt="">motogp
                         </a>
+                        <span>Faster. Forward. Fearless.</span>
+                        <div class="linktr">
+                            <img src="img/icon/clip-icon.svg" alt="">
+                            <a href="https://linktr.ee/MotoGP">linktr.ee/MotoGP</a>
+                        </div>
+                    </section>
+                </div>
+
+                <section class="horizontal-list">
+                    <button class="left-btn"><img src="img/icon/left-arrow.png" alt=""></button>
+                    <button class="right-btn"><img src="img/icon/right-arrow.png" alt=""></button>
+                    <div class="story-wrapper">    
+                        <ul class="list" id="storyList">
+                            <li class="branch-side"></li>
+                            <li class="story-size">
+                                <canvas class="story-style"></canvas>
+                                <div class="story-padding">
+                                    <img src="img/story/467283725_1233855101047060_4397965308731667193_n.jpg" alt="">
+                                    <div class="story-name">WALLPAPERS</div>
+                                </div>
+                            </li>
+                            <li class="story-size">
+                                <canvas class="story-style"></canvas>
+                                <div class="story-padding">
+                                    <img src="img/story/497465468_3485934468203270_986504372171766734_n.jpg" alt="">
+                                    <div class="story-name">FRANCE</div>
+                                </div>
+                            </li>
+                            <li class="story-size">
+                                <canvas class="story-style"></canvas>
+                                <div class="story-padding">
+                                    <img src="img/story/467344437_994582662701611_2378984773512656080_n.jpg" alt="">
+                                    <div class="story-name">FANTASY</div>
+                                </div>
+                            </li>
+                            <li class="story-size">
+                                <canvas class="story-style"></canvas>
+                                <div class="story-padding">
+                                    <img src="img/story/492103711_1809365086523674_729358289531937609_n.jpg" alt="">
+                                    <div class="story-name">SPAIN</div>
+                                </div>
+                            </li>
+                            <li class="story-size">
+                                <canvas class="story-style"></canvas>
+                                <div class="story-padding">
+                                    <img src="img/story/491445314_8972438286189854_4439664864618526592_n.jpg" alt="">
+                                    <div class="story-name">JEREZ</div>
+                                </div>
+                            </li>
+                            <li class="story-size">
+                                <canvas class="story-style"></canvas>
+                                <div class="story-padding">
+                                    <img src="img/story/490436172_703267365598953_178561089426644726_n.jpg" alt="">
+                                    <div class="story-name">QATAR</div>
+                                </div>
+                            </li>
+                            <li class="story-size">
+                                <canvas class="story-style"></canvas>
+                                <div class="story-padding">
+                                    <img src="img/story/489357454_445815768588068_8652903731031719464_n.jpg" alt="">
+                                    <div class="story-name">USA</div>
+                                </div>
+                            </li>
+                            <li class="story-size">
+                                <canvas class="story-style"></canvas>
+                                <div class="story-padding">
+                                    <img src="img/story/489348148_1031253325578086_5973937953201987272_n.jpg" alt="">
+                                    <div class="story-name">ARGENTINA</div>
+                                </div>
+                            </li>
+                            <li class="story-size">
+                                <canvas class="story-style"></canvas>
+                                <div class="story-padding">
+                                    <img src="img/story/467410247_1871115103418665_6816326490481531043_n.jpg" alt="">
+                                    <div class="story-name">CALENDAR</div>
+                                </div>
+                            </li>
+                            <li class="story-size">
+                                <canvas class="story-style"></canvas>
+                                <div class="story-padding">
+                                    <img src="img/story/482576101_504395062438934_955934777185900280_n.jpg" alt="">
+                                    <div class="story-name">THAILAND</div>
+                                </div>
+                            </li>
+                            <li class="story-size">
+                                <canvas class="story-style"></canvas>
+                                <div class="story-padding">
+                                    <img src="img/story/477190230_1137074861043791_3077292897471833703_n.jpg" alt="">
+                                    <div class="story-name">BURIRAM</div>
+                                </div>
+                            </li>
+                            <li class="story-size">
+                                <canvas class="story-style"></canvas>
+                                <div class="story-padding">
+                                    <img src="img/story/470210213_555478767399285_5979764316517108587_n.heic" alt="">
+                                    <div class="story-name">BANGKOK</div>
+                                </div>
+                            </li>
+                            <li class="story-size">
+                                <canvas class="story-style"></canvas>
+                                <div class="story-padding">
+                                    <img src="img/story/476079332_470095642832311_9152548521811529056_n.jpg" alt="">
+                                    <div class="story-name">SEPANG</div>
+                                </div>
+                            </li>
+                            <li class="story-size">
+                                <canvas class="story-style"></canvas>
+                                <div class="story-padding">
+                                    <img src="img/story/467536837_1103487654461096_3530764784182671977_n.jpg" alt="">
+                                    <div class="story-name">BARCELONA</div>
+                                </div>
+                            </li>
+                            <li class="story-size">
+                                <canvas class="story-style"></canvas>
+                                <div class="story-padding">
+                                    <img src="img/story/467337391_547383764814985_9163401285558285556_n.jpg" alt="">
+                                    <div class="story-name">Podcast 🎧</div>
+                                </div>
+                            </li>
+                            <li class="branch-side"></li>
+                        </ul>
+                    </div>    
+                </section>
+            </header>
+            <div class="events">
+                <div class="posted">
+                    <img src="img/icon/posts.jpg" alt="">
+                    <span>POSTS</span>
+                </div>
+                <div class="saved">
+                    <img src="img/icon/instagram-save-icon.svg" alt="">
+                    <span>SAVED</span>
+                </div>
+                <div class="tagged">
+                    <img src="img/icon/instagram-tag-icon.svg" alt="">
+                    <span>TAGGED</span>
+                </div>
+            </div>
+            <div class="grid-posts">
+                <div class="post-row">
+                    <div>
+                        <img src="img/posts/1.jpg" alt="">
+                    </div>
+                    <div>
+                        <img src="img/posts/2.jpg" alt="">
+                    </div>
+                    <div class="third-post">
+                        <img src="img/posts/3.jpg" alt="">
                     </div>
                 </div>
-            </section>
-
-            <div class="profile-info">
-                <section>
-                    <div class="profile-name">
-                        <a href="https://www.instagram.com/motogp">
-                            <span>motogp</span>
-                        </a>
-                        <img src="img/icon/verified.png" alt="">
+                <div class="post-row">
+                    <div>
+                        <img src="img/posts/4.jpg" alt="">
                     </div>
-                    <div class="profile-btn">
-                        <button class="follow-btn">Follow</button>
-                        <button class="message-btn">Message</button>
-                        <button class="add-user-btn">
-                            <img src="img/icon/add-user.svg" alt="">
-                        </button>
+                    <div>
+                        <img src="img/posts/5.jpg" alt="">
                     </div>
-                    <div class="option-btn">
-                        <img src="img/icon/three-dots.svg" alt="">
+                    <div>
+                        <img src="img/posts/6.jpg" alt="">
                     </div>
-                </section>
-
-                <section>
-                    <ul>
-                        <li class="posts">
-                            <span>23,911</span>
-                            <span>posts</span>
-                        </li>
-                        <li class="followers">
-                            <span>17M</span>
-                            <span>followers</span>
-                        </li>
-                        <li class="following">
-                            <span>214</span>
-                            <span>following</span>
-                        </li>
-                    </ul>
-                </section>
-
-                <section>
-                    <div class="name">MotoGP™</div>
-                    <a href="https://www.threads.com/@motogp?xmt=AQF0MtP77ihdvEMNdKnBGxswaoSR9HnWqpUO7RpgQNbxomk" class="link-threads">
-                        <img src="img/icon/threads-icon.svg" alt="">motogp
-                    </a>
-                    <span>Faster. Forward. Fearless.</span>
-                    <div class="linktr">
-                        <img src="img/icon/clip-icon.svg" alt="">
-                        <a href="https://linktr.ee/MotoGP">linktr.ee/MotoGP</a>
+                </div>
+                <div class="post-row">
+                    <div>
+                        <img src="img/posts/7.jpg" alt="">
                     </div>
-                </section>
+                    <div>
+                        <img src="img/posts/8.jpg" alt="">
+                    </div>
+                    <div>
+                        <img src="img/posts/9.jpg" alt="">
+                    </div>
+                </div>
             </div>
-
-            <section class="horizontal-list">
-                <button class="left-btn"><img src="img/icon/left-arrow.png" alt=""></button>
-                <button class="right-btn"><img src="img/icon/right-arrow.png" alt=""></button>
-                <div class="story-wrapper">    
-                    <ul class="list" id="storyList">
-                        <li class="branch-side"></li>
-                        <li class="story-size">
-                            <canvas class="story-style"></canvas>
-                            <div class="story-padding">
-                                <img src="img/story/467283725_1233855101047060_4397965308731667193_n.jpg" alt="">
-                                <div class="story-name">WALLPAPERS</div>
-                            </div>
-                        </li>
-                        <li class="story-size">
-                            <canvas class="story-style"></canvas>
-                            <div class="story-padding">
-                                <img src="img/story/497465468_3485934468203270_986504372171766734_n.jpg" alt="">
-                                <div class="story-name">FRANCE</div>
-                            </div>
-                        </li>
-                        <li class="story-size">
-                            <canvas class="story-style"></canvas>
-                            <div class="story-padding">
-                                <img src="img/story/467344437_994582662701611_2378984773512656080_n.jpg" alt="">
-                                <div class="story-name">FANTASY</div>
-                            </div>
-                        </li>
-                        <li class="story-size">
-                            <canvas class="story-style"></canvas>
-                            <div class="story-padding">
-                                <img src="img/story/492103711_1809365086523674_729358289531937609_n.jpg" alt="">
-                                <div class="story-name">SPAIN</div>
-                            </div>
-                        </li>
-                        <li class="story-size">
-                            <canvas class="story-style"></canvas>
-                            <div class="story-padding">
-                                <img src="img/story/491445314_8972438286189854_4439664864618526592_n.jpg" alt="">
-                                <div class="story-name">JEREZ</div>
-                            </div>
-                        </li>
-                        <li class="story-size">
-                            <canvas class="story-style"></canvas>
-                            <div class="story-padding">
-                                <img src="img/story/490436172_703267365598953_178561089426644726_n.jpg" alt="">
-                                <div class="story-name">QATAR</div>
-                            </div>
-                        </li>
-                        <li class="story-size">
-                            <canvas class="story-style"></canvas>
-                            <div class="story-padding">
-                                <img src="img/story/489357454_445815768588068_8652903731031719464_n.jpg" alt="">
-                                <div class="story-name">USA</div>
-                            </div>
-                        </li>
-                        <li class="story-size">
-                            <canvas class="story-style"></canvas>
-                            <div class="story-padding">
-                                <img src="img/story/489348148_1031253325578086_5973937953201987272_n.jpg" alt="">
-                                <div class="story-name">ARGENTINA</div>
-                            </div>
-                        </li>
-                        <li class="story-size">
-                            <canvas class="story-style"></canvas>
-                            <div class="story-padding">
-                                <img src="img/story/467410247_1871115103418665_6816326490481531043_n.jpg" alt="">
-                                <div class="story-name">CALENDAR</div>
-                            </div>
-                        </li>
-                        <li class="story-size">
-                            <canvas class="story-style"></canvas>
-                            <div class="story-padding">
-                                <img src="img/story/482576101_504395062438934_955934777185900280_n.jpg" alt="">
-                                <div class="story-name">THAILAND</div>
-                            </div>
-                        </li>
-                        <li class="story-size">
-                            <canvas class="story-style"></canvas>
-                            <div class="story-padding">
-                                <img src="img/story/477190230_1137074861043791_3077292897471833703_n.jpg" alt="">
-                                <div class="story-name">BURIRAM</div>
-                            </div>
-                        </li>
-                        <li class="story-size">
-                            <canvas class="story-style"></canvas>
-                            <div class="story-padding">
-                                <img src="img/story/470210213_555478767399285_5979764316517108587_n.heic" alt="">
-                                <div class="story-name">BANGKOK</div>
-                            </div>
-                        </li>
-                        <li class="story-size">
-                            <canvas class="story-style"></canvas>
-                            <div class="story-padding">
-                                <img src="img/story/476079332_470095642832311_9152548521811529056_n.jpg" alt="">
-                                <div class="story-name">SEPANG</div>
-                            </div>
-                        </li>
-                        <li class="story-size">
-                            <canvas class="story-style"></canvas>
-                            <div class="story-padding">
-                                <img src="img/story/467536837_1103487654461096_3530764784182671977_n.jpg" alt="">
-                                <div class="story-name">BARCELONA</div>
-                            </div>
-                        </li>
-                        <li class="story-size">
-                            <canvas class="story-style"></canvas>
-                            <div class="story-padding">
-                                <img src="img/story/467337391_547383764814985_9163401285558285556_n.jpg" alt="">
-                                <div class="story-name">Podcast 🎧</div>
-                            </div>
-                        </li>
-                        <li class="branch-side"></li>
-                    </ul>
-                </div>    
-            </section>
-        </header>
-    </main>
+        </main>
+        <footer>
+            <div class="footer-size">
+                <div class="footer-container">
+                    <div class="footer-info">
+                        <span>Meta</span>
+                        <span>About</span>
+                        <span>Blog</span>
+                        <span>Jobs</span>
+                        <span>Help</span>
+                        <span>API</span>
+                        <span>Privacy</span>
+                        <span>Terms</span>
+                        <span>Locations</span>
+                        <span>Instagram lite</span>
+                        <span>Threads</span>
+                        <span>Contact Uploading & Non-Users</span>
+                        <span>Meta Verified</span>
+                    </div>
+                    <div class="footer-language">
+                        <span>English</span>
+                        <span>© 2025 Intagram from Meta</span>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </section>
 </body>
 </html>

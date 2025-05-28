@@ -1,0 +1,347 @@
+@media (max-width: 1263px), (min-width: 1264px) {
+  a, a:hover, a:focus, a:active {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  li {
+    list-style: none;
+  }
+
+  .header {
+    border-bottom: 1px solid rgb(223, 223, 223);
+    height: 418px;
+    width: 935px;
+    display: grid;
+    grid-template-columns: 283.667px 1fr;
+    column-gap: 28px;
+  }
+
+  section:nth-child(1),
+  .profile-picture-container {
+    display: flex;
+    align-items: center;
+    width: 283.667px;
+    height: 200px;
+  }
+
+  .profile-picture-container {
+    height: 150px;
+    justify-content: center;
+  }
+
+  .story-ring-container {
+    width: 168px;
+    height: 168px;
+    cursor: pointer;
+  }
+
+  .story-ring, .story-inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+  }
+
+  .story-ring {
+    background: linear-gradient(45deg, #feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5);
+    padding: 5px;
+    width: 100%;
+    height: 100%;
+  }
+
+  .story-inner {
+    background-color: white;
+    padding: 3px;
+    width: 160px;
+    height: 160px;
+  }
+
+  .story-inner img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
+  .profile-info {
+    height: 200px;
+  }
+
+  .profile-info section:nth-child(1) {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    width: 623.333px;
+    height: 48px;
+  }
+
+  .profile-name {
+    display: flex;
+    flex-direction: row;
+    width: 96.9833px;
+    height: 25px;
+    margin-right: 20px;
+  }
+
+  .profile-name span {
+    display: flex;
+    align-items: flex-end;
+    font-size: 21px;
+    cursor: pointer;
+  }
+
+  .profile-name img {
+    display: flex;
+    align-items: flex-end;
+    width: 21px;
+    height: 21px;
+    margin: 4px 0 0 8px;
+  }
+
+  .profile-btn {
+    display: flex;
+    justify-content: space-between;
+    row-gap: 2px;
+    width: 219.25px;
+    height: 32px;
+  }
+
+  .follow-btn, .message-btn, .add-user-btn {
+    font-size: 12px;
+    letter-spacing: 0.5px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    height: 100%;
+    cursor: pointer;
+  }
+
+  .follow-btn {
+    color: white;
+    padding: 7px 16px;
+    width: 81.65px;
+    background-color: rgb(44, 155, 247);
+  }
+
+  .follow-btn:hover {
+    background-color: rgb(30, 139, 228);
+  }
+
+  .message-btn {
+    width: 87.6px;
+  }
+
+  .add-user-btn {
+    width: 32px;
+    height: 34px;
+    padding: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .add-user-btn img {
+    width: 18px;
+    height: 16px;
+  }
+
+  .option-btn {
+    display: flex;
+    align-items: center;
+    width: 32px;
+    height: 32px;
+    margin-left: 8px;
+    cursor: pointer;
+  }
+
+  .option-btn img {
+    width: 100%;
+    height: 20px;
+  }
+
+  .profile-info section:nth-child(2) {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    width: 100%;
+    height: 20px;
+  }
+
+  .profile-info section:nth-child(2) ul {
+    display: flex;
+    flex-direction: row;
+    row-gap: 20px;
+  }
+
+  .profile-info section:nth-child(2) ul li {
+    margin-right: 37px;
+  }
+
+  .posts span:first-child,
+  .followers span:first-child,
+  .following span:first-child,
+  .profile-info section:nth-child(3) .name {
+    font-weight: bold;
+    font-size: 15px;
+  }
+
+  .posts span:last-child,
+  .followers span:last-child,
+  .following span:last-child {
+    color: gray;
+    font-size: 15px;
+  }
+
+  .profile-info section:nth-child(3) {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .link-threads {
+    border-radius: 15px;
+    background: rgb(236, 236, 236);
+    width: 75.5833px;
+    height: 26px;
+    font-size: 13px;
+    margin: 6px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+  }
+
+  .link-threads:hover {
+    background-color: rgb(223, 223, 223);
+  }
+
+  .profile-info section:nth-child(3) a img {
+    width: 16px;
+    height: 16px;
+    margin-right: 3px;
+  }
+
+  .profile-info section:nth-child(3) span {
+    font-size: 13px;
+    height: 19px;
+  }
+
+  .linktr {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .linktr img {
+    margin-right: 7px;
+    width: 12px;
+    height: 12px;
+  }
+
+  .linktr a {
+    color: rgb(43, 60, 134);
+    font-size: 13px;
+    font-weight: bold;
+    text-decoration: none;
+  }
+
+  .linktr a:hover {
+    text-decoration: underline;
+  }
+
+  .horizontal-list {
+    position: relative;
+    width: 935px;
+    height: 130px;
+    margin: 50px auto;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    z-index: 10;
+  }
+
+  .left-btn, .right-btn {
+    position: absolute;
+    background-color: transparent;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    opacity: 0.5;
+    z-index: 2;
+  }
+
+  .right-btn {
+    right: 5px;
+  }
+
+  .left-btn img, .right-btn img {
+    width: 24px;
+    height: 24px;
+  }
+
+  .list {
+    display: flex;
+    flex-direction: row;
+    width: 935px;
+    height: 130px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    gap: 5px;
+    scrollbar-width: none;
+    z-index: 8;
+  }
+
+  .list::-webkit-scrollbar {
+    display: none;
+  }
+
+  .branch-side {
+    background-color: white;
+    width: 24px;
+    height: 128px;
+    flex: 0 0 auto;
+    z-index: 5;
+  }
+
+  .story-size {
+    flex: 0 0 auto;
+    width: 125px;
+    height: 128px;
+    position: relative;
+  }
+
+  .story-style {
+    position: absolute;
+    height: 89px;
+    width: 89px;
+    border: 1px solid lightgray;
+    border-radius: 50%;
+    left: 13px;
+    top: 4px;
+  }
+
+  .story-padding {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 115px;
+    height: 128px;
+    padding: 10px 15px;
+  }
+
+  .story-padding img {
+    border-radius: 50%;
+    width: 77px;
+  }
+
+  .story-name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 85px;
+    height: 16px;
+    font-size: 11px;
+    font-weight: 600;
+    margin-top: 15px;
+  }
+}
